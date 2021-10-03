@@ -1,0 +1,63 @@
+<html><head><title>Drone Controls</title></head>
+<body>
+<H1>Drone Command Center</H1>>
+
+<script type="text/javascript">
+    function submitU() {
+        var upRequest = new XMLHttpRequest();
+        upRequest.open('get', 'http://172.17.1.26/U', true);
+        upRequest.send();
+    }
+    function submitD() {
+        var downRequest = new XMLHttpRequest();
+        downRequest.open('get', 'http://172.17.1.26/D', true);
+        downRequest.send();
+    }
+    function submitL() {
+        var leftRequest = new XMLHttpRequest();
+        leftRequest.open('get', 'http://172.17.1.26/L', true);
+        leftRequest.send();
+    }
+    function submitR() {
+        var rightRequest = new XMLHttpRequest();
+        rightRequest.open('get', 'http://172.17.1.26/R', true);
+        rightRequest.send();
+    }
+    function submitF() {
+        var forwardRequest = new XMLHttpRequest();
+        forwardRequest.open('get', 'http://172.17.1.26/F', true);
+        forwardRequest.send();
+    }
+    function submitB() {
+        var backwardRequest = new XMLHttpRequest();
+        backwardRequest.open('get', 'http://172.17.1.26/B', true);
+        backwardRequest.send();
+    }
+    function submitCW() {
+        var clockwiseRequest = new XMLHttpRequest();
+        clockwiseRequest.open('get', 'http://172.17.1.26/CW', true);
+        clockwiseRequest.send();
+    }
+    function submitCCW() {
+        var counterClockwiseRequest = new XMLHttpRequest();
+        counterClockwiseRequest.open('get', 'http://172.17.1.26/CCW', true);
+        counterClockwiseRequest.send();
+    }
+
+</script>
+<table>
+<tr>
+<td style="text-align:center"><input type="submit" value="Forward" onclick="submitF()"></td>
+<td style="text-align:center"><input type="submit" value="Up" onclick="submitU()"></td>
+</tr>
+<tr>
+<td style="text-align:center"><input type="submit" value="Clockwise" onclick="submitCW()"><input type="submit" value="Counter-Clockwise" onclick="submitCCW()"></td>
+<td style="text-align:center"><input type="submit" value="Left" onclick="submitL()"><input type="submit" value="Right" onclick="submitR()"></td>
+</tr>
+<tr>
+<td style="text-align:center"><input type="submit" value="Backward" onclick="submitB()"></td>
+<td style="text-align:center"><input type="submit" value="Down" onclick="submitD()"></td>
+</tr>
+</table>
+</body>
+</html>
