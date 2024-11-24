@@ -1,39 +1,163 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Ben Branch's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Branch | Engineering Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(125deg, rgba(15,199,176,1) 50%, rgba(51,107,188,1) 70%, rgba(86,15,199,1) 90%);
+            color: #f0f0f0;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(34, 34, 51, 0.9);
+            color: #fff;
+        }
+
+        header h1, footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: rgba(44, 44, 66, 0.9);
+            border: 2px solid #FFD700;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            flex: 1;
+            display: block;
+        }
+
+        .project-details {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .project-details h2 {
+            color: #FFD700;
+            margin-top: 0;
+        }
+
+        .project-details p {
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-<body style="background: rgb(15,199,176); background: linear-gradient(125deg, rgba(15,199,176,1) 56%, rgba(51,107,188,1) 63%, rgba(86,15,199,1) 75%, rgba(151,131,161,1) 88%, rgba(0,212,255,1) 97%, rgba(212,212,212,1) 100%);">
-    <h1>Ben Branch's Portfolio</h1>
-    <table style="width:100%">
-    <tr><td><p><h1>Green Houseparty</h1>
-    My Student Innovation Project which would read soil levels and water a plant while singing to it. This design utilizes an ESP32, a soil moisture sensor and a speaker.It contains bytecode which plays the audio sample.
-    </p>https://github.com/branc-8/UAT-SIP/tree/main/Sip</td>
-        <td><image width="833" height="493" src="img/sip.png"></image></td></tr>
-    <tr><td><p><h1>Text Adventure Treasure Chest</h1>
-    Developed with Jonathan Sheerowood who wrote the text questions to answer. When a player completes a simple text based trivia game, a servo would activate which would open a box. 
-    </p>https://github.com/branc-8/Text-Adventure-Treasure-Chest</td>
-        <td><image width="833" height="493" src="img/treasure.jpg"></image></td></tr>
-    <tr><td><h1><p>Remote Bot</h1>
-        This is a remote robot that will recieve and autonomously decode specified signals and act upon them. Basically it is an RC car. This project utilized an ESP32 and servo motors.
-    </p>https://github.com/branc-8/uat-iotcar</td>
-        <td><image width="833" height="493" src="img/iotcar.jpg"></image></td></tr>
-    <tr><td><p><h1>Drone Project</h1>
-    This drone project developed alongside Jacob Parks's Live Witness project with his help, and based upon various drone projects on the internet, this drone is designed to balance autonomously using a PID controller. It utilizes an ESP32, an MCU6050, 4 ESCs, a battery, and 4 high speed brushless motors. This drone features a websockets control that can be used from any wifi point.
-    </p>https://github.com/branc-8/UAT-Drone</td>
-        <td><image width="833" height="493" src="img/iotdrone.jpg"><br><image width="833" height="493" src="img/iotdroneguts.jpg"></td></tr>
-            <tr><td><p><h1>Larson Scanner</h1>
-        This is a larson scanner. It sends a pattern through lights and appears as though it is connected to the previous. It is a fun effect that is well known and beloved by many.
-    </p>https://github.com/branc-8/Larson-Scanner</td>
-        <td><image width="833" height="493" src="img/larson.png"></image></td></tr>
-    <tr><td><p><h1>Simon's Lights</h1>
-        Utilizing LEDs, buttons, and an Arduino, this is a classic Simon game. It has an intro, victory and defeat conditions. It has multiple levels as well.
-    </p>https://github.com/branc-8/SimpleSimon</td>
-        <td><image width="833" height="493" src="img/simon.png"></image></td></tr>
-            <tr><td><p><h1>Drum machine</h1>
-        A simple "drum machine" musical instrument that steps through an array where pitches can be assigned to create a beat. This design utilizes a speaker, tactile buttons and an arduino. 
-    </p>https://github.com/branc-8/Beep-Boop-Drum-Machine</td>
-        <td><image width="833" height="493" src="img/drum.png"></image></td></tr>
-    </table>
+<body>
+    <header>
+        <h1>Ben Branch's Engineering Portfolio</h1>
+    </header>
 
+    <main>
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="img/sip.png" alt="Green Houseparty">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/UAT-SIP/tree/main/Sip">Green Houseparty</a></h2>
+                <p>
+                    A Student Innovation Project that monitors soil moisture levels and waters plants while playing music. Built with an ESP32, soil sensor, and speaker. The system uses bytecode to play audio samples.
+                </p>
+            </div>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="img/treasure.jpg" alt="Text Adventure Treasure Chest">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/Text-Adventure-Treasure-Chest">Text Adventure Treasure Chest</a></h2>
+                <p>
+                    A collaborative project featuring a text-based trivia game. Completing the game activates a servo to open a treasure chest. Developed using an Arduino.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <img src="img/iotcar.jpg" alt="Remote Bot">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/uat-iotcar">Remote Bot</a></h2>
+                <p>
+                    A remote-controlled car capable of decoding and acting on received signals autonomously. Built with an ESP32 and servo motors.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project">
+            <img src="img/iotdrone.jpg" alt="Drone Project">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/UAT-Drone">Drone Project</a></h2>
+                <p>
+                    A self-balancing drone designed with a PID controller for stability. Built with an ESP32, MPU6050, ESCs, and brushless motors. Includes WebSocket-based control.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project">
+            <img src="img/larson.png" alt="Larson Scanner">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/Larson-Scanner">Larson Scanner</a></h2>
+                <p>
+                    A lighting project creating a smooth scanning effect. This project is inspired by classic sci-fi aesthetics and uses LEDs.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project">
+            <img src="img/simon.png" alt="Simon's Lights">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/SimpleSimon">Simon's Lights</a></h2>
+                <p>
+                    A recreation of the Simon memory game with multiple levels, victory, and defeat conditions. Built with LEDs, buttons, and an Arduino.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project">
+            <img src="img/drum.png" alt="Drum Machine">
+            <div class="project-details">
+                <h2><a href="https://github.com/branc-8/Beep-Boop-Drum-Machine">Drum Machine</a></h2>
+                <p>
+                    A simple drum machine musical instrument using an Arduino. Players can assign pitches and create beats with tactile buttons and a speaker.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ben Branch | <a href="https://branc-8.github.io/">GitHub Portfolio</a></p>
+    </footer>
 </body>
+</html>
